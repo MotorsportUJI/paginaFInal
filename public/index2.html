@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="">
+  <head>
+  	<meta charset="UTF-8" />
+    <title>Prueba de websockets</title>
+    <script src="/socket.io/socket.io.js"></script>
+    <script src="main.js"></script>
+  </head>
+  <body>
+    <h1>Prueba de Websocket. Comunicación entre conexiones</h1>
+    <div id="messages"></div>
+    <br />
+    <form onsubmit="return addMessage(this)">
+      <input type="author" id="username" placeholder="Nombre" />
+      <input type="text" id="texto" placeholder="Mensaje" />
+      <input type="submit" value="Enviar" />
+    </form>
+  </body>
+</html>
